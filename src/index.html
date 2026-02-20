@@ -11,29 +11,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="search-container">
+    <main>
+    <section class="search-section">
 
-      <!-- Barra de busca grande -->
-      <form data-qa="big" class="form form--big">
+      <div class="search-form seaearch-form--big">
         <input
-          class="form__input form__input--big"
+          type="text"
+          class="search-form__input search-form__input--big"
           name="city_search_big"
-          type="text"
           data-qa="keypress"
-          placeholder="Try “Los Angeles”"
+          placeholder='Try "Los Angeles" '
         />
-      </form>
+      </div>
 
-      <!-- Barra de busca pequena -->
-      <form data-qa="small" class="form form--small">
+      <div class="search-form search-form--small" data-aq="small">
         <input
-          class="form__input form__input--small"
-          name="city_search_small"
           type="text"
+          class="search-form search-form__input--small"
           placeholder="Try “Los Angeles”"
         />
-      </form>
+      </div>
 
-    </div>
+     </section>
+    </main>
   </body>
 </html>
