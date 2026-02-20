@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,27 +6,34 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Barras de Busca</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
+    <div class="search-container">
 
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+      <!-- Barra de busca grande -->
+      <form data-qa="big" class="form form--big">
+        <input
+          class="form__input form__input--big"
+          name="city_search_big"
+          type="text"
+          data-qa="keypress"
+          placeholder="Try “Los Angeles”"
+        />
+      </form>
+
+      <!-- Barra de busca pequena -->
+      <form data-qa="small" class="form form--small">
+        <input
+          class="form__input form__input--small"
+          name="city_search_small"
+          type="text"
+          placeholder="Try “Los Angeles”"
+        />
+      </form>
+
+    </div>
   </body>
 </html>
