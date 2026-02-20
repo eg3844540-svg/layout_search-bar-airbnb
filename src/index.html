@@ -8,29 +8,30 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Barras de Busca</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <main>
+      
     <section class="search-section">
 
-      <div class="search-form seaearch-form--big">
+      <form data-qa="big" class="search-form search-form--big">
         <input
           type="text"
-          class="search-form__input search-form__input--big"
+          class="search-form__input"
           name="city_search_big"
-          data-qa="keypress"
+          data-qa="pass-couse"
           placeholder='Try "Los Angeles" '
         />
-      </div>
+      </form>
 
-      <div class="search-form search-form--small" data-aq="small">
+      <form data-qa="small" class="search-form search-form--small">
         <input
           type="text"
-          class="search-form search-form__input--small"
+          class="search-form__input search-form__input--small"
           placeholder="Try “Los Angeles”"
         />
-      </div>
+      </form>
 
      </section>
     </main>
